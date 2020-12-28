@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasAccuracy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasAccuracy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasDataSet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasDataSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasPercentageOfIOData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasPercentageOfIOData">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTestingBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTestingBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTrainingBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTrainingBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsedOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasHighestAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasHighestAccuracy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Measure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ArtificialNeuralNetworkAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ArtificialNeuralNetworkAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasAccuracy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTestingBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTrainingBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismApplication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismDataSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismDataSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#BehaviorQuestions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#BehaviorQuestions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Output"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ASD/NOT_ASD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Category">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismDataSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Evaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Evaluation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Field">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismApplication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Forecasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Forecasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#PerformancePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#LabelData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#LabelData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#LabelData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Category"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#SupervisedLearning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Learning"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#PerformancePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Measure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Evaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#PerformancePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Output -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Output">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#LabelData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#PerformancePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#PerformancePartition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#RandonForestAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#RandonForestAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasAccuracy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTestingBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTrainingBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#SuperVectorMachineAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#SuperVectorMachineAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasAccuracy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTestingBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isTrainingBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasHighestAccuracy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#SupervisedLearning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#SupervisedLearning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Learning"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#isUsing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#LabelData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Techniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Techniques"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#TrainingTest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasPercentageOfIOData"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasPercentageOfIOData"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#TrainingTest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasPercentageOfIOData"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasPercentageOfIOData"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#TrainingTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#TrainingTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#AutismDataSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#highestAccuracyClassification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#highestAccuracyClassification">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasHighestAccuracy"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.95</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#hasHighestAccuracy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ASD/NOT_ASD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ASD/NOT_ASD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ExampleSVM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ExampleSVM">
+        <hasHighestAccuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.98</hasHighestAccuracy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#ArtificialNeuralNetworkAlgorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#RandonForestAlgorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2020/11/untitled-ontology-10#SuperVectorMachineAlgorithm"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
